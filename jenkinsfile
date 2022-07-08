@@ -1,7 +1,7 @@
 pipeline {
      agent any
      
-     tools{
+     tools {
      gradle 'Gradle-6.2'
      }
      stages {
@@ -16,11 +16,12 @@ pipeline {
              }
          }
          stage('Build') {
+             
              steps { 
                  echo executing gradle..'
+                 withGradle(){
                   sh './gradlew clean -v'
              }              
-             }
-             
+             }         
      }
  }
