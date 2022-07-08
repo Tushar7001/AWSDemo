@@ -19,7 +19,7 @@ pipeline {
          stage('Build') {
              
              steps { 
-                 echo executing gradle..'
+                 echo 'executing gradle..'
                  withGradle(){
                   sh './gradlew clean -v'
              }              
