@@ -1,5 +1,9 @@
 pipeline {
      agent any
+     
+     tools{
+     gradle 'Gradle-6.2'"
+     }
      stages {
          stage('Clean Workspace') {
              steps {
@@ -12,8 +16,9 @@ pipeline {
              }
          }
          stage('Build') {
-             steps {                  
-                  sh './gradlew clean build'
+             steps { 
+                 echo executing gradle..'
+                  sh './gradlew clean -v'
              }              
              }
              
