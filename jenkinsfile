@@ -10,6 +10,7 @@ pipeline {
                   deleteDir()                  
              }
          }
+         }
          stage('Clone Project') {
              steps {                  
                   checkout scm                  
@@ -24,4 +25,4 @@ pipeline {
              }              
              }         
      }
- }
+ 
