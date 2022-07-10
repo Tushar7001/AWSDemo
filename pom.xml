@@ -85,7 +85,7 @@
                            <buildInfo>
                                 <buildName>plugin-demo</buildName>
                                 <buildNumber>${buildnumber}</buildNumber>
-                                <buildUrl>http://build-url.org</buildUrl>
+                                <buildUrl>https://build-url.org</buildUrl>
                             </buildInfo>
                             <licenses>
                                 <autoDiscover>true</autoDiscover>
